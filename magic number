@@ -1,0 +1,25 @@
+#include<stdio.h>
+
+int main ()
+{
+    int n,s=0,r,m;
+    printf ("Enter the number:: ");
+    scanf ("%d",&m);
+    n=m;
+    while (n>9)
+    {
+        s=0;
+    while (n!=0)
+    {
+        r=n%10;
+        s=s+r;
+        n=n/10;
+    }
+    n=s;
+    }
+    if (s==1)
+        printf ("%d is a Magic Number",m);
+    else
+        printf ("%d is a not a Magic Number",m);
+    return 0;
+}
