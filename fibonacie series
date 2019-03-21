@@ -1,0 +1,18 @@
+//..........0,1,1,2,3,5,8,13,21,............
+#include <stdio.h>
+int main ()
+{
+    int a=0,b=1,c;
+    int i,range;
+    printf ("\nEnter the range:: ");
+    scanf ("%d",&range);
+    printf ("%d %d",a,b);
+    for (i=2;i<range;i++)
+        {
+        c=a+b;
+        a=b;
+        b=c;
+        printf (" %d",c);
+        }
+        return 0;
+}
