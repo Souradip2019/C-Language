@@ -1,0 +1,16 @@
+// .........(1/1!+2/2!+3/3!+..........)
+#include <stdio.h>
+int main ()
+{
+    int range,fac=1,i;
+    float sum=0.0;
+    printf ("Enter the range: ");
+    scanf ("%d",&range);
+    for (i=1;i<=range;i++)
+    {
+        fac=fac*i;
+        sum=(sum*1.0)+i/(fac*1.0);
+    }
+    printf ("SUM=%f",sum);
+    return 0;
+}
