@@ -1,0 +1,17 @@
+#include<stdio.h>
+int main ()
+{
+    int age;
+    char gen;
+    printf ("Enter the gen: ");
+    scanf ("%c",&gen);
+    printf ("Enter the age: ");
+    scanf ("%d",&age);
+    if ((gen=='M'||gen=='m')&& age>=65)
+        printf ("SENIOR");
+    else if ((gen=='F'||gen=='f')&& age>=60)
+        printf ("SENIOR");
+        else
+            printf ("JUNIOR");
+        return 0;
+}
