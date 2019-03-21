@@ -1,0 +1,26 @@
+//......(1/1^1-2/2^2+3/3^3-4/4^4+...........)
+#include<stdio.h>
+#include <math.h>
+int main ()
+{
+    int n,i;
+    float s=0.0,p;
+    printf ("Enter How Many No You Want To print:: ");
+    scanf ("%d",&n);
+    for (i=1;i<=n;i++)
+    {
+        if (i%2!=0){
+            p=(i*1.0)/pow(i,i);
+            s=s+p;
+            printf ("+%d/%d^%d",i,i,i);
+        }
+        else
+	    {
+            p=(i*1.0)/pow(i,i);
+            s=s-p;
+            printf ("-%d/%d^%d",i,i,i);
+	    }
+    }
+    printf ("\nSUM=%f",s);
+    return 0;
+}
