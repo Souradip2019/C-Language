@@ -1,0 +1,15 @@
+//Make a Salary Calculator .
+//(Taking three Inputs: Basic, DA & HRA calculate the Total Pay).
+#include<stdio.h>
+int main ()
+{
+    float total,basic,da,hra;
+    printf ("........***Salary Calculator.......***\n\n");
+    printf ("enter the value of basic\n");
+    scanf ("%f",&basic);
+    da = (basic*0.10);
+    hra = (basic*0.3);
+    total=basic+da+hra;
+    printf ("total=%f",total);
+    return 0;
+}
