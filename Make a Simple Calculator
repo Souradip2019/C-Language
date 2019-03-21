@@ -1,0 +1,16 @@
+//Make a Simple Calculator .
+//(Taking two Inputs & calculate their Addition, Subtraction. Multiplication, Division).
+#include<stdio.h>
+int main ()
+{
+    float a,b;
+    printf ( "........Make a Simple Calculator......./n/n/n/n/n/n/n/n/n/n/n/n/n/n/n/n/n/n/n/n/n/n/n");
+    printf ("\nEnter two no:");
+    scanf ("%f%f",&a,&b);
+    printf ("\nAddition =%f",a+b);
+    printf ("\n Subtraction=%f",a-b);
+    printf ("\nMultiplication=%f",a*b);
+    printf ("\nDivision=%f",a/b);
+    return 0;
+}
+
