@@ -1,0 +1,14 @@
+#include <stdio.h>
+int main ()
+{
+    int range,fac=1,sum=0,i;
+    printf ("Enter the range : ");
+    scanf ("%d",&range);
+    for (i=1;i<=range;i++)
+    {
+        fac=fac*i;
+        sum=sum+fac;
+    }
+    printf ("SUM=%1d",sum);
+    return 0;
+}
