@@ -1,0 +1,17 @@
+#include<stdio.h>
+int main ()
+{
+    int r,i,j;
+    printf ("HOW MANY ROWS YOU WANT TO PRINT:: ");
+    scanf ("%d",&r);
+    for (i=1;i<=r;i++)
+    {
+        for (j=1;j<r-i;j++)
+            printf (" ");
+        for (j=1;j<=i;j++)
+            printf ("%d ",j);
+            for (j=j-2;j>=1;j--)
+                printf ("%d ",j);
+            printf ("\n");
+    }
+}
