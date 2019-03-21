@@ -1,0 +1,22 @@
+#include<stdio.h>
+int main ()
+{
+    char ch;
+    int no;
+    printf("enter the ch: ");
+    scanf ("%c",&ch);
+    if (ch>=65 && ch <=90)
+        ch=ch+32;
+    switch (ch)
+    {
+        case 'a' :
+        case 'e' :
+        case 'i' :
+        case 'o' :
+        case 'u' :
+        printf("vowel");
+        break;
+        default : printf("consonant");
+    }
+    return 0;
+}
