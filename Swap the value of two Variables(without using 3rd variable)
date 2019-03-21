@@ -1,0 +1,15 @@
+//    Swap the value of two Variables(without using 3rd variable).
+#include<stdio.h>
+int main ()
+{
+    int a,b,c;
+    printf ("\n..........Swap the value of two Variables......../n/n/n/n");
+    printf ("\nEnter two values A,B :");
+    scanf ("%d%d",&a,&b);
+    c=a;
+    a=b;
+    b=c;
+    printf ("\nAfter swapping a=%d b=%d",a,b);
+    return 0;
+
+}
