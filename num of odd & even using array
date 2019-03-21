@@ -1,0 +1,18 @@
+#include<stdio.h>
+int main ()
+{
+    int arr[100],n,i,s=0;
+    printf ("How many number you want to print:: ");
+    scanf ("%d",&n);
+    printf ("\nEnter the numbers:: ");
+    for (i=0;i<n;i++)
+        scanf ("%d",&arr[i]);
+    for (i=0;i<n;i++)
+    {
+        if (arr[i]%2==0)
+            s=s+1;
+    }
+    printf ("\nNo of even number are %d",s);
+    printf ("\nNo of odd number are %d",n-s);
+    return 0;
+}
