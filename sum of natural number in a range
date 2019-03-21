@@ -1,0 +1,13 @@
+#include<stdio.h>
+int main ()
+{
+    int  range,sum=0,i;
+    printf ("Enter the range: ");
+    scanf ("%d",&range);
+    for (i=1;i<=range;i++)
+    {
+    sum=sum+i;
+    }
+    printf ("SUM=%d",sum);
+    return 0;
+}
