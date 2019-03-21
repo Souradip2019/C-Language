@@ -1,0 +1,12 @@
+#include<stdio.h>
+int main ()
+{
+float pay_amt,amt,dis;
+printf ("enter amt");
+scanf ("%f",&amt);
+dis=amt*0.1;
+printf ("dis=%f",dis);
+pay_amt=amt-dis;
+printf("pay_amt=%f",pay_amt);
+return 0;
+}
