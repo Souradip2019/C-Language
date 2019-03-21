@@ -1,0 +1,24 @@
+#include<stdio.h>
+int main ()
+{
+    int a,b,c,opt;
+    printf ("Enter the value of a,b: ");
+    scanf ("%d%d",&a,&b);
+    printf ("\n1:Add \n2:Subs \n3:Multi \n4:Div");
+    printf ("\nEnter your choice: ");
+    scanf ("%d",&opt);
+    switch (opt)
+    {
+        case 1: c=a+b;
+        break;
+        case 2: c=a-b;
+        break;
+        case 3: c=a*b;
+        break;
+        case 4: c=a/b;
+        break;
+        default : printf ("ERROR!");
+    }
+    printf ("RESULT is %d",c);
+    return 0;
+}
