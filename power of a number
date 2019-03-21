@@ -1,0 +1,14 @@
+#include <stdio.h>
+int main ()
+{
+    int no,i,po,ans=1;
+    printf ("Enter the number :");
+    scanf ("%d",&no);
+    printf ("Enter the power :");
+    scanf ("%d",&po);
+    for (i=1;i<=po;i++)
+        ans=ans*no;
+    printf ("ANS=%d",ans);
+    return 0;
+}
+
