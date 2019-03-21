@@ -1,0 +1,13 @@
+#include<stdio.h>
+int main ()
+{
+int a,b,yr,month,days;
+printf ("enter the value of a");
+scanf ("%d",&a);
+yr=a/365;
+b=a-yr*365;
+month=b/30;
+days=b-month*30;
+printf ("%dyear %dmonth %ddays",yr,month,days);
+return 0;
+}
