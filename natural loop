@@ -1,0 +1,12 @@
+#include<stdio.h>
+int main ()
+{
+
+    int range,i;
+    printf ("enter the range:");
+    scanf ("%d",&range);
+    printf ("Natural no are:  ");
+    for (i=1;i<=range;i++)
+    printf ("%d,",i);
+    return 0;
+}
